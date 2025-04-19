@@ -1,0 +1,18 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.app-main {
+    height: 100vh;
+    background-color: #C7D4E4;
+}
+
+@import './home';
+@import './todolist';

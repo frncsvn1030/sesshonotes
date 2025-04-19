@@ -1,0 +1,103 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.app-main {
+  height: 100vh;
+  background-color: #C7D4E4;
+}
+
+.home-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.home-main .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.home-main .content h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+.home-main .content button {
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .home-main .content {
+    max-width: 500px;
+  }
+  .home-main .content img {
+    width: 150px;
+  }
+  .home-main .content h1 {
+    font-size: 32px;
+  }
+}
+.todolist-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.todolist-main .content {
+  width: 100%;
+  max-width: 652px;
+  padding: 30px;
+  border-radius: 10px;
+}
+.todolist-main .table-main {
+  padding-top: 30px;
+}
+.todolist-main .table-main .toolbar a {
+  padding-right: 10px;
+  font-size: 14px;
+}
+.todolist-main .table-main .row-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+.todolist-main .table-main .row-wrapper .row-text {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.todolist-main .table-main .row-wrapper .row-text input {
+  margin-right: 10px;
+}
+.todolist-main .table-main .row-wrapper .row-text a {
+  color: #405189;
+  font-weight: 800;
+  font-size: 13px;
+  font-style: italic;
+}
+
+@media (max-width: 959px) {
+  .todolist-main {
+    padding: 10px;
+  }
+  input {
+    margin-bottom: 15px;
+  }
+}/*# sourceMappingURL=app.css.map */

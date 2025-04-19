@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client"
+import { BrowserRouter } from "react-router-dom"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// styles
+import './styles/css/app.css'
+
+// Import UIKit CSS
+import 'uikit/dist/css/uikit.min.css';
+
+// Import UIKit JS
+import 'uikit/dist/js/uikit.min.js';
+import 'uikit/dist/js/uikit-icons.min.js'; // (optional) for icons
+
+
+
+import App from "./App"
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+  )
